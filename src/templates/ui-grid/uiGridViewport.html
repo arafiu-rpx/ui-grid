@@ -1,10 +1,9 @@
 <div
   role="rowgroup"
-  class="ui-grid-viewport"
-  ng-style="colContainer.getViewportStyle()"><!-- tbody -->
-  <div
+  class="ui-grid-viewport">
+  <md-list
     class="ui-grid-canvas">
-    <div
+    <md-list-item
       ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index"
       class="ui-grid-row"
       ng-style="Viewport.rowStyle(rowRenderIndex)">
@@ -13,6 +12,6 @@
         ui-grid-row="row"
         row-render-index="rowRenderIndex">
       </div>
-    </div>
-  </div>
+    </md-list-item>
+  </md-list>
 </div>
