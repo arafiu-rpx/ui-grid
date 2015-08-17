@@ -1,7 +1,7 @@
 <div class="ui-grid-viewport"  ng-style="colContainer.getViewPortStyle()">
-  <div class="ui-grid-canvas">
-    <div ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index" class="ui-grid-row" ng-style="Viewport.rowStyle(rowRenderIndex)">
+  <md-list class="ui-grid-canvas">
+    <md-list-item ng-repeat="(rowRenderIndex, row) in rowContainer.renderedRows track by $index" class="ui-grid-row" ng-style="Viewport.rowStyle(rowRenderIndex)">
       <div ui-grid-row="row" row-render-index="rowRenderIndex"></div>
-    </div>
+    </md-list-item>
   </div>
 </div>
