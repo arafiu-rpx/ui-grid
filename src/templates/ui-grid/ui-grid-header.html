@@ -2,13 +2,12 @@
   <div class="ui-grid-top-panel">
     <div class="ui-grid-header-viewport">
       <div class="ui-grid-header-canvas">
-        <div class="ui-grid-header-cell-wrapper" ng-style="colContainer.headerCellWrapperStyle()">
-          <div class="ui-grid-header-cell-row">
+        <md-content class="ui-grid-header-cell-wrapper" ng-style="colContainer.headerCellWrapperStyle()">
+          <div class="ui-grid-header-cell-row" flex layout="row" layout-align="center center">
             <div class="ui-grid-header-cell ui-grid-clearfix" ng-repeat="col in colContainer.renderedColumns track by col.colDef.name" ui-grid-header-cell col="col" render-index="$index"></div>
           </div>
-        </div>
+        </md-content>
       </div>
-
     </div>
     <div ui-grid-menu></div>
   </div>
